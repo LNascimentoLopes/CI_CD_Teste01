@@ -68,7 +68,7 @@ jobs:
             sudo docker run --name senai_ci_ci -d --restart unless-stopped -p 80:8080 lsnasc/senai_ci_ci:latest
 
             sleep 5
-            curl -f http://localhost:80/health || exit 1
+            curl -f http://localhost/health || exit 1
             echo " deploy successful "
 
             
